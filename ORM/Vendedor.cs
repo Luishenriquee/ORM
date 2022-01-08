@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace ORM
 {
+    [Class(Table = "Vendedor")]
     class Vendedor
     {
+        [Id(Column = "Cod_Vendedor")]
         public int Cod_Vendedor;
-        public string Nome_Vendedor;
-        public string Meta_de_Venda;
+
+        [Property]
+        public string Nome_Vendedor { get; set; }
+
+        [Property]
+        public string Meta_de_Venda { get; set; }
     }
 }
