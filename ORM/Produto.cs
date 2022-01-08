@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace ORM
 {
+    [Class(Table = "Produto")]
     class Produto
     {
+        [Id(Column = Cod_Produto)]
         public int Cod_Produto;
-        public string Ddescricao;
-        public float Valor_Unitario;
+
+        [Property]
+        public string Ddescricao { get; set; }
+
+        [Property]
+        public float Valor_Unitario { get; set; }
     }
 }
