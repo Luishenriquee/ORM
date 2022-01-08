@@ -10,7 +10,7 @@ namespace ORM
         public int Cod_Produto;
 
         [Property]
-        public string Ddescricao { get; set; }
+        public string Descricao { get; set; }
 
         [Property]
         public float Valor_Unitario { get; set; }
